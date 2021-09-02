@@ -1,32 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
-import movieList from "./movieList";
 
-function Movie({name , picture, rating}){
-  return <div>
-    <h1>i like {name} </h1>
-    <h4>{rating}/5.0</h4>
-    <image src = {picture} />
-  </div>
-}
-
-Movie.propTypes = {
-  name: PropTypes.string.isRequired,
-  picture: PropTypes.string.isRequired,
-  rating: PropTypes.number.isRequired
-};
-
-function App() {
-  return <div>
-    Hello!!!
-    {movieList.map( movie => (
-    <Movie 
-      key ={movie.id} 
-      name={movie.name} 
-      picture={movie.picture}
-      rating={movie.rating}/>
-    ))}
-    </div>;
+class App extends React.Component{
+ state = {
+   isLoding: true
+ };
+ componentDidMount(){
+   setTimeout(()=>{
+     this.setState({isLoding:false})
+   }, 6000);
+ }
+ render(){
+   const {isLoding} = this.state;
+   return <div>{ isLoding ? "Loding...":"We are ready"}</div>
+ }
 }
 
 export default App;
