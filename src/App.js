@@ -1,30 +1,30 @@
 import React from "react";
+import PropTypes from "prop-types";
+import movieList from "./movieList";
 
-function Movie({name , picture}){
+function Movie({name , picture, rating}){
   return <div>
     <h1>i like {name} </h1>
+    <h4>{rating}/5.0</h4>
     <image src = {picture} />
   </div>
 }
 
-const movieList = [
-  {
-    name:"엔드게임",
-    picture:"https://play-lh.googleusercontent.com/HykKFGtZfH31Yr1KqL8QfaM8aGsN3JQCYYCV4w2Wy_22h1TkpVJfztzsyyVEJbmCbonrBA"
-  },
-  {
-    name: "인피니티 워",
-    picture : "https://upload.wikimedia.org/wikipedia/ko/9/92/%EC%96%B4%EB%B2%A4%EC%A0%B8%EC%8A%A4_%EC%9D%B8%ED%94%BC%EB%8B%88%ED%8B%B0_%EC%9B%8C.jpg"
-  }
-];
-
-
+Movie.propTypes = {
+  name: PropTypes.string.isRequired,
+  picture: PropTypes.string.isRequired,
+  rating: PropTypes.number.isRequired
+};
 
 function App() {
   return <div>
     Hello!!!
     {movieList.map( movie => (
-    <Movie name={movie.name} picture={movie.picture}/>
+    <Movie 
+      key ={movie.id} 
+      name={movie.name} 
+      picture={movie.picture}
+      rating={movie.rating}/>
     ))}
     </div>;
 }
