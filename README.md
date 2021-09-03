@@ -29,7 +29,7 @@ component에 정보를 보낼 수 있다.
 <strong>react가 좋은 이유</strong><br>
 재사용 가능한 component를 만들 수 있다.
 
-## property와 value
+## 🟢property와 value
 
 component에 property와 value 사용하기
 
@@ -40,7 +40,7 @@ function App(prov or { fav }){
 #<App fav = "hello"/>
 </pre>
 
-## prop-types
+## 🟢prop-types
 
 type을 지정할 때 사용한다.
 
@@ -56,7 +56,7 @@ type을 지정할 때 사용한다.
 
 변수 = PropTypes.변수타입(number,string..).isRequeire
 
-# state
+# ✅state
 
 class componenet는 return을 가지고 있지 않는다. 대신 render을 사용한다.
 
@@ -66,7 +66,7 @@ react는 자동적으로 나의 class component의 render method를 실행한다
 
 class내에서 변수를 사용하려면 this를 사용해야한다.
 
-## setState
+## 🟢setState
 
 state를 바꾸고 싶으면 setState를 사용하면 된다.
 
@@ -76,12 +76,12 @@ setState를 사용하면 부를 때마다 새로운 state와 render function을 
 
 ## react component
 
-## componentDidUpdate
+## 🟢componentDidUpdate
 
 setState를 호출하면, component를 호출하고, 먼저 render를 호출한 다음 업데이트가 완료되었다고 말하면
 componentDidUpdate가 실행된다.
 
-## componentDidMount
+## 🟢componentDidMount
 
 컴포넌트가 마운트된 직후에 호출됩니다.
 처음에 render를 하면 호출되는 life cycle method
@@ -95,3 +95,15 @@ componentDidUpdate가 실행된다.
 <li>componentDidMount()</li>
 </ul>
 </pre>
+
+# ✅ Making the Movie App
+
+## 🟢axios
+
+Axios는 브라우저, Node.js를 위한 Promise API를 활용하는 HTTP 비동기 통신 라이브러리입니다</br>
+
+<a href="https://www.geeksforgeeks.org/difference-between-fetch-and-axios-js-for-making-http-requests">Axios vs fetch 차이점</a>  참고
+
+## react html class 사용
+
+html은 class를 적용할 때 class로 사용하지만 react component에서 class를 사용하려면 className이라고 선언해줘야한다.
