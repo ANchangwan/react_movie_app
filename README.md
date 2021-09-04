@@ -1,6 +1,9 @@
 # ✅Component
+## 🟢컴포넌트란?
+컴포넌트(Component)란 프로그래밍에 있어 재사용이 가능한 각각의 독립된 모듈을 뜻한다.
 
-html을 반환하는 함수
+## 사용방법
+✔html을 반환하는 함수
 
 component를 사용하고자할 때 형태
 ReactDOM.render( <App />, document.getElementById('root'))
