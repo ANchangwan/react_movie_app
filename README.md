@@ -1,9 +1,6 @@
 # ✅Component
-## 🟢컴포넌트란?
-컴포넌트(Component)란 프로그래밍에 있어 재사용이 가능한 각각의 독립된 모듈을 뜻한다.
 
-## 사용방법
-✔html을 반환하는 함수
+html을 반환하는 함수
 
 component를 사용하고자할 때 형태
 ReactDOM.render( <App />, document.getElementById('root'))
@@ -110,3 +107,25 @@ Axios는 브라우저, Node.js를 위한 Promise API를 활용하는 HTTP 비동
 ## react html class 사용
 
 html은 class를 적용할 때 class로 사용하지만 react component에서 class를 사용하려면 className이라고 선언해줘야한다.
+
+# ✅ react router
+<pre>
+npm install react-router-dom
+</pre>
+설치하면 rounter를 쓸 수 있다.
+
+## 사용법
+<ul>
+    <li>Route path= "경로설정" component={사용할 component} /></li>
+    <li>Router> h1 this is router tag /h1< Route></li>
+</ul>
+
+## Link to
+a href를 사용하면 리엑트가 죽고 새로고침되는 문제가 있다. 이런 문제를 해결하고 싶으면 Link to를 사용하면 된다.
+
+
+### 주의 사항
+link to를 사용하려면 HashRouter 안에 있어야 한다.
+
+## props
+Link to로 내가 설정한 경로로 이동하면 props도 같이 전송된다.
