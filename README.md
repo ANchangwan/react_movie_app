@@ -74,14 +74,15 @@ setState를 사용하지 않으면 새 state와 함께 render function이 호출
 
 setState를 사용하면 부를 때마다 새로운 state와 render function을 호출 해준다.
 
-## react component
+# react component
+componentDidMount 와 componentDidUpdate는 컴포넌트안에서 데이터를 가져오는 작업을 수행할 때 사용 되어야 한다.
 
-## 🟢componentDidUpdate
+### 🟢componentDidUpdate
 
 setState를 호출하면, component를 호출하고, 먼저 render를 호출한 다음 업데이트가 완료되었다고 말하면
 componentDidUpdate가 실행된다.
 
-## 🟢componentDidMount
+### 🟢componentDidMount
 
 컴포넌트가 마운트된 직후에 호출됩니다.
 처음에 render를 하면 호출되는 life cycle method
