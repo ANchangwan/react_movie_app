@@ -7,7 +7,7 @@ ReactDOM.render( <App />, document.getElementById('root'))
 
 ## 🟢<strong>jsx</strong></br>
 
-여기서 <App />을 jsx라고 부른다. javascript와 html 사이의 조합을 jsx라고 한다.
+여기서 "<App />"을 jsx라고 부른다. javascript와 html 사이의 조합을 jsx라고 한다.
 
 component를 작성할 때마다 "import React from "react";"를 사용해야 한다.
 
